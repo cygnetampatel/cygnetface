@@ -11,9 +11,9 @@ return [
         'connection' => [
             'default' => [
                 'host' => '103.206.56.106:33061',
-                'dbname' => 'cygnetface',
-                'username' => 'cygnet',
-                'password' => 'cygnet',
+                'dbname' => 'cygnetface2',
+                'username' => 'root',
+                'password' => 'root',
                 'active' => '1'
             ]
         ]
