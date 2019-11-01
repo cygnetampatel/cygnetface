@@ -1,0 +1,52 @@
+version: "2"
+
+services:
+  app:
+    image: sweetlystevia-www
+    container_name: sweetlystevia-www
+    build:
+      context: ./docker/app
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 801:80
+      - 443:443
+    volumes:
+      - .:/var/www/html/
+  mysql:
+    container_name: sweetlystevia-mysql
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 33061:3306
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: sweetlystevia
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: cygnet
+      MYSQL_PASSWORD: cygnet
+  redis:
+    container_name: sweetlystevia-redis
+    image: redis:4-alpine
+    restart: always
+    ports:
+      - 63791:6379
+    volumes:
+      - redis:/data
+  phpmyadmin:
+    container_name: sweetlystevia-phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - 8081:80
+    links:
+      - mysql
+    environment:
+      PMA_HOST: mysql
+
+volumes:
+  mysql:
+    driver: "local"
+  redis:
+    driver: "local"
