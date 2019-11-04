@@ -76,8 +76,6 @@
     "scripts": {
         "compile": [
           "chmod -R 777 ./",
-          "php -dmemory_limit=5G bin/magento cache:enable",
-          "chmod -R 777 ./",
           "php -dmemory_limit=6G bin/magento setup:static-content:deploy -f",
           "chmod -R 777 ./",
           "php -dmemory_limit=5G bin/magento setup:di:compile",
