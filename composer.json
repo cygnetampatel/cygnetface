@@ -69,5 +69,8 @@
     ],
     "extra": {
         "magento-force": "override"
+    },
+    "engines": {
+        "yarn": "1.x"
     }
 }
