@@ -39,5 +39,9 @@
         "time-grunt": "~1.4.0",
         "underscore": "~1.8.0",
         "yarn": "~1.19.1"
+    },
+    "engines": {
+        "node": "10.15.3",
+        "yarn": "1.19.1"
     }
 }
