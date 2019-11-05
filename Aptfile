@@ -3,5 +3,4 @@ libjpeg8-dev
 libpango1.0-dev
 libgif-dev
 build-essential
-apt install g++
-apt install build-essential
+apt-get install build-essential g++
