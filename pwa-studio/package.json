@@ -2,6 +2,7 @@
   "name": "@magento/pwa-studio",
   "version": "4.0.0",
   "private": true,
+  "gypfile": true,
   "workspaces": [
     "packages/babel-preset-peregrine",
     "packages/create-pwa",
