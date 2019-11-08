@@ -28,13 +28,13 @@ COPY scripts/monorepo-introduction.js ./scripts/monorepo-introduction.js
 COPY lerna.json ./lerna.json
 
 # install dependencies with yarn
-RUN yarn install --frozen-lockfile
+RUN yarn install --ignore-engines --frozen-lockfile
 
 # copy over the rest of the package files
 COPY packages ./packages
 
 # run yarn again to reestablish workspace symlinks
-RUN yarn install --frozen-lockfile
+RUN yarn install --ignore-engines --frozen-lockfile
 
 # build the app
 RUN yarn run build

@@ -98,7 +98,8 @@
     "webpack-cli": "^3.3.9",
     "webpack-dev-middleware": "^3.7.2",
     "word-wrap": "^1.2.3",
-    "workbox-webpack-plugin": "^4.3.1"
+    "workbox-webpack-plugin": "^4.3.1",
+    "yargs": "^14.2.0"
   },
   "optionalDependencies": {
     "bundlesize": "~0.17.1",
