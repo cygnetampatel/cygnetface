@@ -1,4 +1,4 @@
-apt-get install python
-apt-get install make
-apt-get install g++
-apt-get install yarn
+#apt-get install python
+#apt-get install make
+g++
+#apt-get install yarn
