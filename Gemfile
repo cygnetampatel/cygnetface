@@ -1,5 +1,6 @@
+source "https://rubygems.org"
 gem 'g++'
-#gem 'build-essential'
+gem 'build-essential'
 #gem 'python2.7'
 #gem 'gcc-8-base'
 #gem 'gcc'
