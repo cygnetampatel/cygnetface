@@ -1,0 +1,1 @@
+-e "echo 'Hello from dokku'" 
